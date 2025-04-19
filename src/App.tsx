@@ -7,7 +7,7 @@ import Socials from "./components/socials";
 function App() {
   return (
     <div>
-      <Headshot />
+      <Headshot src="src/assets/headshot.jpg"/>
       <Header />
       <Socials />
     </div>
