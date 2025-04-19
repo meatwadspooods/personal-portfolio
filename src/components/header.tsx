@@ -1,4 +1,6 @@
-const Header = () => {
+import React from 'react';
+
+const Header: React.FC = () => {
   return (
     <div className="text-left w-[384px]">
       <section>

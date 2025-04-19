@@ -8,12 +8,7 @@ type ButtonProps = {
 };
 
 // button component
-const Button = ({
-  children,
-  onClick,
-  className = "",
-  icon,
-}: ButtonProps): React.ReactElement => {
+const Button: React.FC<ButtonProps> = ({children, onClick, className = "", icon}) => {
   return (
     <button
       type="button"

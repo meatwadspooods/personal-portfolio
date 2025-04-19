@@ -1,4 +1,3 @@
-import { FC } from "react";
 import Button from "./button";
 import {
   FaFileDownload,
@@ -7,7 +6,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-const Socials: FC = () => {
+const Socials: React.FC = () => {
   const handleResumeClick = (): void => {
     //download my resume through the browser
     const url: string = "/Adam Elhamdi - Resume.pdf";
