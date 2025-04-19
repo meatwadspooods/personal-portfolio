@@ -36,7 +36,7 @@ const Socials: FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub className="cursor-pointer ml-3 text-gray-400 hover:text-white w-7 h-7" />
+        <FaGithub className="cursor-pointer ml-3 text-gray-400 hover:text-white transition duration-300 w-7 h-7" />
       </a>
 
       <a
@@ -44,7 +44,7 @@ const Socials: FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaEnvelope className="cursor-pointer text-gray-400 hover:text-white w-7 h-7" />
+        <FaEnvelope className="cursor-pointer text-gray-400 hover:text-white transition duration-300 w-7 h-7" />
       </a>
 
       <a
@@ -52,7 +52,7 @@ const Socials: FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedin className="cursor-pointer text-gray-400 hover:text-white w-7 h-7" />
+        <FaLinkedin className="cursor-pointer text-gray-400 hover:text-white transition duration-300 w-7 h-7" />
       </a>
     </section>
   );
