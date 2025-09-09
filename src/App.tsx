@@ -37,11 +37,7 @@ function App() {
               <li className="pt-5">
                 <Education
                   logoSrc="https://cdn.brandfetch.io/idtYj3ruRz/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-                  degree={<>
-                            B.S. Economics
-                            <br />
-                            Minor in Computer Science
-                          </>}
+                  degree= "B.S. Economics<br />Minor in Computer Science"
                   university="The Univeristy of Texas at Austin"
                   dateRange="August 2021 - May 2025"
                 />

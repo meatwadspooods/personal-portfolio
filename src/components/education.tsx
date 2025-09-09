@@ -24,7 +24,7 @@ const Education: React.FC<EducationProps> = ({logoSrc, degree, university, dateR
                 </div>
 
                 <div>
-                    <h3 className='text-2xl font-semibold text-gray-100'>{degree}</h3>
+                    <h3 className='text-2xl font-semibold text-gray-100' dangerouslySetInnerHTML={{ __html: degree }}/>
                     <p className='text-lg text-gray-300'>{university}</p>
                     <p className='text-gray-400'>{dateRange}</p>
                 </div>
