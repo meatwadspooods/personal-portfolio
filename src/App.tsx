@@ -5,6 +5,9 @@ import Headshot from "./components/headshot";
 import Socials from "./components/socials";
 import ExperienceCard from "./components/experience";
 import Education from "./components/education";
+import ProjectsCard from "./components/projects";
+import ResearchCard from "./components/research";
+import uhLogo from './assets/University_of_Houston_seal.svg';
 
 function App() {
   return (
@@ -18,15 +21,43 @@ function App() {
             <Header />
             <Socials />
           </div>
+
+          {/*worried abot window sizing here, seems to work alriiiight tho*/}
+          <div className="flex flex-col">
+            <ul>
+              <li className="pb-5">
+                <Education
+                  logoSrc= {uhLogo}
+                  degree="B.S. Computer Science"
+                  university="The Univeristy of Houston"
+                  dateRange="August 2025 - May 2028"
+                />
+              </li>
+
+              <li className="pt-5">
+                <Education
+                  logoSrc="https://cdn.brandfetch.io/idtYj3ruRz/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                  degree={<>
+                            B.S. Economics
+                            <br />
+                            Minor in Computer Science
+                          </>}
+                  university="The Univeristy of Texas at Austin"
+                  dateRange="August 2021 - May 2025"
+                />
+              </li>
+            </ul>
+          </div>
+
         </div>
 
         {/* Right Div */}
         <div className="pt-24 lg:w-[52%] lg:py-24">
           <div className="text-left max-w-3xl">
             <div className="text-gray-300 mb-4 space-y-6">
-              <h2 className="text-3xl font-bold text-white">About</h2>
+              <h2 className="text-4xl font-bold text-white underline">About</h2>
               <p>
-                I'm a Software Engineer at the University of Texas in Austin passionate about building software that blends engineering with real-world impact. My philosophy in creating and design is to build in order to learn and make the peoples lives around me easier and more fun.
+                I'm a computer science student at the University of Houton passionate about building software that blends engineering with real-world impact. I previously attended The University of Texas at Austin where I earned a B.S. in Economics, a Minor in Computer Science, and a minor in Arabic. My philosophy in creating and design is to build in order to learn and make the lives of people around me easier and more fun.
               </p>
 
               <p>
@@ -35,7 +66,7 @@ function App() {
             </div>
             
             {/* Experience section */}
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">Experience</h2>
+            <h2 className="text-4xl font-bold text-white mt-12 mb-6 underline">Experience</h2>
             <ExperienceCard
               logoSrc="https://cdn.brandfetch.io/idPDsaQdEh/w/201/h/98/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
               jobTitle="Software Engineer Intern"
@@ -75,17 +106,60 @@ function App() {
               ]}
             />
 
-            {/* Experience section */}
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">Education</h2>
+            {/* Education section       added it to the left side instead of the right*/}
+            {/* <Education
+              logoSrc= {uhLogo}
+              degree="B.S. Computer Science"
+              university="The Univeristy of Houston"
+              dateRange="August 2025 - May 2028"
+            />
+
             <Education
               logoSrc="https://cdn.brandfetch.io/idtYj3ruRz/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-              degree="Bachelor of Science in Economics"
+              degree={<>
+                        B.S. Economics
+                        <br />
+                        Minor in Computer Science
+                      </>}
               university="The Univeristy of Texas at Austin"
               dateRange="August 2021 - May 2025"
+            /> */}
+
+            {/*Research Section*/}   
+            <h2 className="text-4xl font-bold text-white mt-12 mb-6 underline">Research</h2>
+ 
+            <ResearchCard
+              researchTitle = "Applied Machine Learning Lab Research Assistant"
+              lab = "Oden Institute for Computational Engineering and Sciences"
+              location = "University of Texas at Austin"
+              dateRange = "September 2022 – Decemeber 2022"
+              bullets = {["Analyzed multimodal datasets (60+ EEG participants, 10,000+ behavioral samples) using Python, achieving 92% classification accuracy in cognitive state prediction models.",
+                          "Designed and implemented various convolutional neural network architectures to make predictions based on time-series data with PyTorch.",
+                          "Distributed model training in a cloud GPU cluster with Kubernetes to reduce training time by 50%.",
+                        ]}
             />
-            
-            {/* Projects section */}
-            <h2 className="text-3xl font-bold text-white mt-12 mb-6">Projects</h2>
+
+            {/* Projects Section */}
+            <h2 className="text-4xl font-bold text-white mt-12 mb-6 underline">Projects</h2>
+
+            <ProjectsCard
+              projectTitle = "Distributed Key-Value Store"
+              technologies = "Go, Git Docker"
+              dateRange = "February 2023 – Present"
+              bullets = {["Developing the back-end API of a distributed, fault tolerant, consistent, and sharded key-value store.",
+                          "Utilizing Goroutines for concurrency when handling client and internal HTTP requests for system communication.",
+                        ]}
+            />
+
+            <ProjectsCard
+              projectTitle = "TagMe"
+              technologies = "Electron, Go, Git, Node.js, HTML/CSS"
+              dateRange = "January 2022 – March 2022"
+              bullets = {["Worked in an Agile team to make a cross platform, full stack desktop application to search files by custom tags.",
+                          "Responsible for UI and frontend functionality, designed and implemented backend unit tests in Node.js.",
+                        ]}
+            />
+
           </div>
         </div>
       </div>

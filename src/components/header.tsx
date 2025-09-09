@@ -10,7 +10,7 @@ const Header: React.FC = () => {
           Fullstack Software Engineer
         </h2>
         <h3 className="text-xl font-medium text-gray-400 mb-4">
-          📍Austin, Texas 🇺🇸
+          📍Houston, Texas 🇺🇸
         </h3>
       </section>
       <section className="text-gray-300 text-sm">

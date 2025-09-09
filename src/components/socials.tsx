@@ -9,10 +9,10 @@ import {
 const Socials: React.FC = () => {
   const handleResumeClick = (): void => {
     //download my resume through the browser
-    const url: string = "/Adam Elhamdi - Resume.pdf";
+    const url: string = "/Elhamdi-Adam-Resume.pdf";
     const link: HTMLAnchorElement = document.createElement("a");
     link.href = url;
-    link.download = "Adam Elhamdi - Resume.pdf";
+    link.download = "Elhamdi-Adam-Resume.pdf";
 
     document.body.appendChild(link);
     link.click();
