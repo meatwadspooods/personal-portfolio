@@ -2,7 +2,7 @@ import React from 'react';
 import headshot from '../assets/headshot.jpg';
 
 type HeadshotProps = {
-  headshot_src: string;
+  headshot_src?: string;
   alt?: string;
   className?: string;
 }
