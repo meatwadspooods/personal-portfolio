@@ -17,7 +17,7 @@ function App() {
         {/* Left Div */}
         <div className="fixed lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
           <div>
-            <Headshot src="./headshot.jpg"/>
+            <Headshot src="../public/headshot.jpg"/>
             <Header />
             <Socials />
           </div>

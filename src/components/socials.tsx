@@ -1,4 +1,5 @@
 import Button from "./button";
+import resume1 from "../assets/Elhamdi-Adam-Resume.pdf";
 import {
   FaFileDownload,
   FaGithub,
@@ -9,7 +10,7 @@ import {
 const Socials: React.FC = () => {
   const handleResumeClick = (): void => {
     //download my resume through the browser
-    const url: string = "./Elhamdi-Adam-Resume.pdf";
+    const url: string = resume1;
     const link: HTMLAnchorElement = document.createElement("a");
     link.href = url;
     link.download = "Elhamdi-Adam-Resume.pdf";
